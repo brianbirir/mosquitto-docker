@@ -4,12 +4,18 @@ services:
     container_name: mqtt_broker
     image: eclipse-mosquitto:latest
     restart: always
-    ports: 
+    ports:
       - "1883:1883"
     volumes:
       - mosquitto.conf:/mosquitto/config/mosquitto.conf
-    networks: 
+      - mosq_data_volume:/mosquitto/data
+      - mosq_logs_volume:/mosquitto/log
+    networks:
       - iot_cloud
   
 networks: 
   iot_cloud:
+
+volumes:
+  mosq_data_volume:
+  mosq_logs_volume:
