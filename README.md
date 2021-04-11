@@ -4,7 +4,7 @@ Deployment of Mosquitto broker via Docker. This repo contains the mosquitto conf
 
 ## Testing
 
-Mosquitto comes with a MQTT client by default i.e. `mosquitto_pub` and `mosquitto_sub` clients. Ensure that the Docker instance of Mosquitto is running.
+Mosquitto comes with MQTT clients by default i.e. `mosquitto_pub` and `mosquitto_sub` clients. Ensure that the Docker instance of Mosquitto is running.
 
 * First run a subscriber client in one terminal:
 
