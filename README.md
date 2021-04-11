@@ -13,7 +13,7 @@ sudo docker exec -it mqtt_broker mosquitto_sub -t building/#
 
 ```
 
-* Then run a publish a message using the `mosquitto_pub` client:
+* Then publish a message using the `mosquitto_pub` client:
 
 ```bash
 sudo docker exec -it mqtt_broker mosquitto_pub -m "37 degrees celsius" -t building/room/kitchen/temperature
