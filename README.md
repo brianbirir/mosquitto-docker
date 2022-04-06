@@ -10,14 +10,12 @@ Mosquitto comes with MQTT clients by default i.e. `mosquitto_pub` and `mosquitto
 
 ```bash
 sudo docker exec -it mqtt_broker mosquitto_sub -t building/#
-
 ```
 
 * Then publish a message using the `mosquitto_pub` client:
 
 ```bash
 sudo docker exec -it mqtt_broker mosquitto_pub -m "37 degrees celsius" -t building/room/kitchen/temperature
-
 ```
 
 You should see the message `37 degrees celsius` in the terminal session that is running the subscriber client.
